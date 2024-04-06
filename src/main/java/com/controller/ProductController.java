@@ -19,7 +19,7 @@ public class ProductController {
 	ProductService productService;
 	
 	@GetMapping(value = "/")
-	public List<Product> welcome() {
+	public String welcome() {
 		return "Welcome to Pet Clinic Created By Akash";
 	}
 	

@@ -13,11 +13,15 @@ import com.bean.Product;
 import com.service.ProductService;
 
 @RestController
-@RequestMapping("product")
 public class ProductController {
 
 	@Autowired
 	ProductService productService;
+	
+	@GetMapping(value = "/")
+	public List<Product> welcome() {
+		return "Welcome to Pet Clinic Created By Akash";
+	}
 	
 	@GetMapping(value = "findAll")
 	public List<Product> findAll() {

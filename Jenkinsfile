@@ -1,8 +1,9 @@
 pipeline {
     agent any
-    tools {
-        MAVEN 
+     tools {
+        maven "MAVEN"
     }
+
     stages {
         stage("version of software"){
             steps{

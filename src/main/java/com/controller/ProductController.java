@@ -20,7 +20,7 @@ public class ProductController {
 	
 	@GetMapping(value = "/")
 	public String welcome() {
-		return "Welcome to Pet Clinic Created By Akash";
+		return "<div style='color:red;font-size:30pt'>Welcome to Pet Clinic Created By Akash</div>";
 	}
 	
 	@GetMapping(value = "findAll")
